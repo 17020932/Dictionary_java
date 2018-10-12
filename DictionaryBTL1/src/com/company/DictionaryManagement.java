@@ -70,29 +70,26 @@ public class DictionaryManagement {
 
     }
     public void dictionaryLookup() {
-//        System.out.print("Nhập từ cần tra: ");
-        String find = scan.next();
+        String find = scan.nextLine();
         int result = LookUp(find);
         if(result <0){
-            System.out.println("Không tìm thấy từ cần tra!!!");
+            System.out.println("Khong tim thay tu can tra!!!");
         }
         else System.out.println(dictionary.getNewWord().get(result).getWord_explain());
     }
     public void addWord () {
-//        System.out.println("Nhập từ bạn muốn thêm: ");
-        String addTarget = scan.next().trim();
-        String addExplain = scan.nextLine().trim();
+        String addTarget = scan.nextLine().trim();
+        String addExplain = scan.nextLine();
         Word w = new Word(addTarget, addExplain);
         int a = LookUp(addTarget);
         if (a <0 ) {
             dictionary.getNewWord().add(w);
 
-        } else System.out.println("Từ vừa nhập đã có trong danh sách!!!");
+        } else System.out.println("Tu ban vua nhap da co trong danh sach!!!");
     }
 
     public void deleteWord() {
-//        System.out.println("Nhập từ bạn muốn xóa: ");
-        String remove_target = scan.next();
+        String remove_target = scan.nextLine();
         int m = 0;
         for (int i = 0; i < dictionary.getNewWord().size(); i++) {
             if (dictionary.getNewWord().get(i).getWord_target().trim().equals(remove_target.trim())) {
@@ -100,11 +97,10 @@ public class DictionaryManagement {
                 m = m + 1;
             }
         }
-        if (m == 0) System.out.println("Không tìm thấy từ muốn xóa!!!");
+        if (m == 0) System.out.println("Khong tim thay tu muon xoa!!!");
     }
     public void dictionarySearcher(){
-//        System.out.print("Bạn muốn tra những từ bắt đầu bằng: ");
-        String find = scan.next();
+        String find = scan.nextLine();
         System.out.println(dictionary.getNewWord().size());
         for(int i = 0; i <dictionary.getNewWord().size(); i++){
         if(dictionary.getNewWord().get(i).getWord_target().indexOf(find)== 0){
@@ -113,8 +109,7 @@ public class DictionaryManagement {
         }
     }
     public void updateDictionary(){
-//        System.out.println(" Bạn muốn sửa từ nào: ");
-        String upTarget = scan.next().trim();
+        String upTarget = scan.nextLine().trim();
         int a = LookUp(upTarget);
         String upExplain = scan.nextLine().trim();
         Word U = new Word(upTarget,upExplain);
@@ -133,20 +128,13 @@ public class DictionaryManagement {
         System.out.println("\t8: Exit");
     }
     public void  editWord()
-    {   Menu();
+    {
         while(true)
         {
+            Menu();
             int choice ;
-//            try
-//            {
             choice = scan.nextInt();
-//            }
-//            catch(Exception ex)
-//            {
-//                choice =0;
-//                System.out.println("\nNhap 1 so nguyen");
-//                continue;
-//            }
+            scan.nextLine();
             switch(choice)
             {
                 case 1:
@@ -161,7 +149,7 @@ public class DictionaryManagement {
                     dictionarySearcher();
                     break;
                 case 4 :
-                    System.out.println("Nhap tu ban muon them, tren cung 1 dong cach nhau boi dau cach: ");
+                    System.out.println("Nhap tu ban muon them, tren 2 dong ");
                     addWord();
                     break;
                 case 5 :
@@ -170,7 +158,7 @@ public class DictionaryManagement {
                     break;
 
                 case 6 :
-                    System.out.println("Nhap tu ban muon sua(tieng anh và nghia tren cug 1 dong): ");
+                    System.out.println("Nhap tu ban muon sua, tu va nghia tren 2 dong: ");
                     updateDictionary();
                     break;
                 case 7:
