@@ -1,4 +1,4 @@
-package com.company;
+package Dictionary1;
 
 public class Word {
     private String word_target;
