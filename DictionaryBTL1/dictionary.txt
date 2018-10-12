@@ -678,7 +678,6 @@ county	hat, tinh
 couple	doi, cap
 a couple	mot cap, mot doi
 courage	can dam, su dung cam, dung khi
-coursetien trinh, qua trinh dien tien; san chay dua
 of course	di nhien
 court	san, san (tennis...), toa an, quan toa, phien toa
 cousin	anh em ho
@@ -1181,8 +1180,6 @@ set fire to	dot chay cai gi
 firm	hang, cong ty; chac, kien quyet, vung vang
 firmly	vung chac, kien quyet
 first	thu nhat, dau tien, truoc het; nguoi, vat dau tien, thu nhat
-at first
-truc tiep
 fish	ca, mon ca; cau ca, bat ca
 fishing	su cau ca, su danh ca
 fit	hop, vua; thich hop, xung dang
@@ -1949,7 +1946,6 @@ opposition	su doi lap, su doi nhau; su chong lai, su phan doi;phe doi lap
 option	su lua chon
 orange	qua cam; co mau da cam
 order	thu, bac; ra lenh
-in order tohop le
 ordinary	thuong, thong thuong
 organ	dan ooc gan
 organization	to chuc, co quan; su to chuc
@@ -2190,7 +2186,7 @@ proceed	tien len, theo duoi, tiep dien
 process	qua trinh, su tien trien, quy trinh; che bien, gia cong, xu ly
 produce	san xuat, che tao
 producer	nha san xuat
-product		san pham
+product	
 production	su san xuat, che tao
 profession	nghe, nghe nghiep
 professional	nghe, nghe nghiep; chuyen nghiep
@@ -2575,8 +2571,6 @@ shot	dan, vien dan
 shoulder	vai
 shout	ho het, reo ho; su la het, su ho reo
 show	bieu dien, trung bay; su bieu dien, su bay to
-shower
-(n) voi hoa sen, su tam voi hoa sen
 shut	dong, khep, day; tinh khep kin
 shy	nhut nhat, e then
 sick	om, dau, benh
@@ -2665,8 +2659,6 @@ sometimes	thinh thoang, doi khi
 somewhat	den muc do nao do, hoi, mot chut
 somewhere	noi nao do. dau do
 soon	som, chang bao lau nua
-as soon as
-ngay khi
 sore	dau, nhuc
 sorry	xin loi, lay lam tiec, lay lam buon
 sort	thu, hang loai; lua chon, sap xep, phan loai
