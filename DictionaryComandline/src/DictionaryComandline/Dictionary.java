@@ -1,8 +1,10 @@
-package Dictionary1;
-import java.util.*;
+package DictionaryComandline;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Dictionary {
-     private List <Word> newWord = new ArrayList<Word>();
+    private List<Word> newWord = new ArrayList<Word>();
 
     public void setNewWord(List<Word> newWord) {
         for(int i=0; i<newWord.size(); i++){
@@ -13,5 +15,4 @@ public class Dictionary {
     public List<Word> getNewWord() {
         return newWord;
     }
-
 }
