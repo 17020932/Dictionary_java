@@ -1,4 +1,4 @@
-package Dictionary1;
+package DictionaryComandline;
 
 public class Word {
     private String word_target;

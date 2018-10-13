@@ -1,52 +1,50 @@
-package Dictionary1;
+package DictionaryComandline;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class DictionaryCommandline {
-
+public class DictionaryComandline {
     DictionaryManagement dictionary_management = new DictionaryManagement();
 
-        public void showAllWords(){
-            dictionary_management.showAllWords();
-        }
+    public void showAllWords(){
+        dictionary_management.showAllWords();
+    }
 
-        public void dictionaryBasic() {
-            dictionary_management.insertFromCommandline();
-            showAllWords();
-        }
+    public void dictionaryBasic() {
+        dictionary_management.insertFromCommandline();
+        showAllWords();
+    }
 
-        public void dictionaryAdvanced() {
-            dictionary_management.insertFromFile();
-            showAllWords();
-        }
+    public void dictionaryAdvanced() {
+        dictionary_management.insertFromFile();
+        showAllWords();
+    }
 
-        public void cmdLookUp() {
-            dictionary_management.dictionaryLookup();
-        }
+    public void cmdLookUp() {
+        dictionary_management.dictionaryLookup();
+    }
 
-        public void cmdRemove() {
-            dictionary_management.remove();
-        }
+    public void cmdRemove() {
+        dictionary_management.remove();
+    }
 
-        public void cmdAdd() {
-            dictionary_management.add();
-        }
+    public void cmdAdd() {
+        dictionary_management.add();
+    }
 
-        public void cmdRepair() {
-            dictionary_management.repair();
-        }
+    public void cmdRepair() {
+        dictionary_management.repair();
+    }
 
-        public void cmdSearcher() {
-            dictionary_management.dictionarySearcher();
-        }
+    public void cmdSearcher() {
+        dictionary_management.dictionarySearcher();
+    }
 
-        public void cmdDictionaryExportToFile () {
-            dictionary_management.dictionaryExportToFile();
-        }
+    public void cmdDictionaryExportToFile () {
+        dictionary_management.dictionaryExportToFile();
+    }
 
     public static void main (String[] agrs){
-        DictionaryCommandline cmd = new DictionaryCommandline();
+        DictionaryComandline cmd = new DictionaryComandline();
         cmd.dictionaryAdvanced();
         Scanner scan = new Scanner(System.in);
         boolean exit = false;
@@ -58,9 +56,9 @@ public class DictionaryCommandline {
             System.out.println("\t3. sua du lieu tu dien bang dong lenh");
             System.out.println("\t4. xoa du lieu tu dien bang dong lenh");
             System.out.println("\t5. tim kiem gan dung tra ve mot mang tu co bat dau bang chuoi nhap vao");
-//            System.out.println("\t6. luu thay doi");
-            System.out.println("\t6. thoat khoi chuong trinh");
-            System.out.print("nhap vao lua chon cua ban : ");
+            System.out.println("\t6. luu thay doi");
+            System.out.println("\t7. thoat khoi chuong trinh");
+            System.out.print("nhap vao lua chon cua ban (nhap so tu 1 den 7) : ");
             int i = scan.nextInt();
             switch (i) {
 //                case 1 :
@@ -86,11 +84,12 @@ public class DictionaryCommandline {
                     break;
                 case 6 :
                     cmd.cmdDictionaryExportToFile();
-                    exit = true;
                     break;
-//                case 7 :
-//                    exit = true;
-//                    break;
+                case 7 :
+                   exit = true;
+                   break;
+                default:
+                    System.out.println("lenh vua nhap bi sai, cac lenh nhap chi tu 1 toi 7");
             }
         }
 

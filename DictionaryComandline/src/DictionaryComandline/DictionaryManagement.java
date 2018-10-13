@@ -1,8 +1,9 @@
-package Dictionary1;
-import java.util.*;
-import java.io.*;
-public class DictionaryManagement {
+package DictionaryComandline;
 
+import java.io.*;
+import java.util.*;
+
+public class DictionaryManagement {
     Dictionary dictionary = new Dictionary();
     Scanner scan = new Scanner(System.in);
     //nhập dữ liệu từ bàn phím
@@ -131,9 +132,9 @@ public class DictionaryManagement {
             }
         }
 
-       for(int i=0; i<wordSearch.size(); i++) {
-           wordSearch.get(i).printWord();
-       }
+        for(int i=0; i<wordSearch.size(); i++) {
+            wordSearch.get(i).printWord();
+        }
     }
 
     //xuất dữ liệu ra file(ghi đè file cũ)
