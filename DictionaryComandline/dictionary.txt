@@ -1738,6 +1738,7 @@ on behalf of sb	thay mặt cho ai, nhân danh ai
 on board	trên tàu thủy
 on sb’s behalf	nhân danh cá nhân ai
 pay attention to	chú ý tới
+rose	hoa hong
 sack	bào tải; đóng bao, bỏ vào bao
 sad	buồn, buồn bã
 sadly	một cách buồn bã, đáng buồn là, không may mà

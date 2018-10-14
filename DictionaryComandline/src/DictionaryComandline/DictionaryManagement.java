@@ -20,7 +20,7 @@ public class DictionaryManagement {
 
         BufferedReader input = null;
         try {
-            input = new BufferedReader(new InputStreamReader(new FileInputStream("dictionary.txt"), "UTF-8"));
+            input = new BufferedReader(new InputStreamReader(new FileInputStream("WayBackHome.txt"), "UTF-8"));
             String str = input.readLine();
             while (str != null){
                 if(str.indexOf("\t") == -1){
@@ -28,8 +28,9 @@ public class DictionaryManagement {
                     continue;
                 }
                 String[] part = str.trim().split("\t");
+                if(part.length == 2) {
                 Word w = new Word(part[0], part[1]);
-                dictionary.getNewWord().add(w);
+                dictionary.getNewWord().add(w);}
                 str = input.readLine();
             }
         }
@@ -141,7 +142,7 @@ public class DictionaryManagement {
     public void dictionaryExportToFile() {
         BufferedWriter output = null;
         try {
-            output = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("dictionary.txt"), "UTF-8"));
+            output = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("WaybackHome.txt"), "UTF-8"));
             for (Word element : dictionary.getNewWord()) {
                 output.write(element.getWord_target() + "\t" + element.getWord_explain());
                 output.newLine();

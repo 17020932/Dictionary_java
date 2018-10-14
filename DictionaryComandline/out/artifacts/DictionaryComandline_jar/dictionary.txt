@@ -1730,6 +1730,7 @@ make-up	đồ hóa trang, son phấn
 male	trai, trống, đực; con trai, đàn ông, con trống, đực
 mall	búa
 map	bản đồ
+meat	thit lon
 member	thanh vien
 milk cake	bánh sữa
 of course	dĩ nhiên
